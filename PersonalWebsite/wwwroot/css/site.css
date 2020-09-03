@@ -150,3 +150,38 @@ body {
     width: 100%;
     height: auto;
 }
+
+.icon {
+    width: 80px;
+    height: 80px;
+    background: #000;
+}
+
+.hamburger {
+    width: 50px;
+    height: 6px;
+    background: #fff;
+    position: absolute;
+    left: 14px;
+    top: 35px;
+    transition: .5s;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: ' ';
+    position: absolute;
+    left: 0px;
+    width: 50px;
+    height: 6px;
+    background: #fff;
+    transition: .5s;
+}
+
+.hamburger::before {
+    top: 16px;
+}
+
+.hamburger::after {
+    top: -16px;
+}
