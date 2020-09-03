@@ -167,6 +167,10 @@ body {
     transition: .5s;
 }
 
+.hamburger.active {
+    background: rgba(0,0,0,0);
+}
+
 .hamburger::before,
 .hamburger::after {
     content: ' ';
@@ -182,6 +186,16 @@ body {
     top: 16px;
 }
 
+.hamburger.active::before {
+    top: 0px;
+    transform: rotate(45deg);
+}
+
 .hamburger::after {
     top: -16px;
+}
+
+.hamburger.active::after {
+    top: 0px;
+    transform: rotate(135deg);
 }
