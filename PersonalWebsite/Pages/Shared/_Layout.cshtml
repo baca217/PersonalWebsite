@@ -10,10 +10,10 @@
 </head>
 <body>
     <header>
-        <div class="icon" id="sidebarCollapse">
+        <div class="icon active" id="sidebarCollapse">
             <div class="hamburger"></div>
         </div>
-        <div class="sidenav" id="sidebar">
+        <div class="sidenav active" id="sidebar">
             <ul class="list-unstyled">
                 <li>
                     <a href="#">Home</a>
@@ -28,7 +28,7 @@
         </div>
     </header>
     <div class="container">
-        <div id="dimmer"></div>
+        <div id="dimmer" class=""></div>
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
@@ -36,7 +36,12 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2020 - PersonalWebsite - <a asp-area="" asp-page="/Privacy">Privacy</a>            
+            &copy; 2020 - PersonalWebsite - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            <div class="social">
+                <a><i class="fa fa-github symbols"></i></a>
+                <a><i class="fa fa-linkedin symbols"></i></a>
+                <a><i class="fa fa-envelope symbols"></i></a>
+            </div>
         </div>        
     </footer>
 

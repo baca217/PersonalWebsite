@@ -133,6 +133,11 @@ body {
 
 /*screen dimmer div for when sidebar is pressed*/
 #dimmer {
+    display: none;
+}
+
+#dimmer.active {    
+    
     background: black;
     opacity: 0.5;
     position: fixed;
@@ -142,10 +147,6 @@ body {
     height: 100%;
     display: inline;
     z-index: 1;
-}
-
-#dimmer.active {
-    display: none;
 }
 
 #profile_img {
@@ -203,18 +204,41 @@ body {
     transform: rotate(135deg);
 }
 
-.fa-github {
-     
-}
-
-.fa-linkedin {
+.symbols {
+    color: gray;
+    position: relative;
+    padding: 4px;
     
 }
 
+.fa-github:hover {
+    text-shadow: 0px 0px 10px #008f0c;
+    color: black;
+    transition: .5s;
+}
+.fa-github {
+    transition: .5s;
+}
+
+.fa-linkedin:hover {
+    text-shadow: 0px 0px 10px #2867B2;
+    color: black;
+    transition: .5s;
+}
+
+.fa-envelope:hover {
+    text-shadow: 0px 0px 6px #d60202;
+    color: black;
+    transition: .5s;
+}
+
+.fa-envelope {
+    transition: .5s;
+}
+
 .social {
-    color: gray;
-    position: fixed;
+    font-size: 35px;
+    position: absolute;
+    right: 20px;
     bottom: 0;
-    right: 0;
-    font-size: 70px;
 }
