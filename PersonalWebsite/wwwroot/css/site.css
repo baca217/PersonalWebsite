@@ -91,10 +91,13 @@ body {
 .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 30px;
     color: white;
     display: block;
     transition: all 0.3s;
+    text-align: center;
+    position: relative;
+    right: 5px;
 }
 
 .sidenav a:hover {
@@ -115,9 +118,8 @@ body {
     position: fixed;
     left: 260px;
     top: 10px;
-    z-index: 1;
-    transition: all 0.3s;
     z-index: 2;
+    transition: all 0.3s;
 }
 
 #sidebarCollapse.active {
@@ -152,19 +154,20 @@ body {
 }
 
 .icon {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     background: #000;
+    border-radius: 5px;
 }
 
 .hamburger {
-    width: 50px;
+    width: 45px;
     height: 6px;
     background: #fff;
     position: absolute;
-    left: 14px;
-    top: 35px;
-    transition: .5s;
+    left: 8px;
+    top: 26px;
+    transition: .5s;    
 }
 
 .hamburger.active {
@@ -176,7 +179,7 @@ body {
     content: ' ';
     position: absolute;
     left: 0px;
-    width: 50px;
+    width: 45px;
     height: 6px;
     background: #fff;
     transition: .5s;
@@ -198,4 +201,20 @@ body {
 .hamburger.active::after {
     top: 0px;
     transform: rotate(135deg);
+}
+
+.fa-github {
+     
+}
+
+.fa-linkedin {
+    
+}
+
+.social {
+    color: gray;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-size: 70px;
 }
