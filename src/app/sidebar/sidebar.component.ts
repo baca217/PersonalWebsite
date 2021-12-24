@@ -13,4 +13,11 @@ export class SidebarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  changeActive(callElem: HTMLElement){
+    var curActive = document.getElementsByClassName("active")[0];
+    if(callElem !== curActive){
+      curActive.classList.remove("active");
+      callElem.classList.add("active");
+    }
+  }
 }

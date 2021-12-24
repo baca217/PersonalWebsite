@@ -1,7 +1,7 @@
 <div class="topnav">
-  <a class="active" routerLink="" >Home</a>
-  <a routerLink="aboutme" >About Me</a>
-  <a routerLink="hobbies" >Hobbies</a>
-  <a routerLink="projects" >Projects</a>
-  <a routerLink="contact" >Contact</a>
+  <a #ref1 class="active" routerLink="" (click)="changeActive(ref1)">Home</a>
+  <a #ref2 routerLink="aboutme" (click)="changeActive(ref2)">About Me</a>
+  <a #ref3 routerLink="hobbies" (click)="changeActive(ref3)">Hobbies</a>
+  <a #ref4 routerLink="projects" (click)="changeActive(ref4)">Projects</a>
+  <a #ref5 routerLink="contact" (click)="changeActive(ref5)">Contact</a>
 </div>
