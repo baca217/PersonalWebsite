@@ -26,12 +26,13 @@ export class HobbiesComponent implements OnInit {
     let ret = "";
 
     if (diff.getFullYear() > 0) {
-      if(diff.getFullYear() > 1){ret += diff.getFullYear() + "year old and ";}
-      else{ret += diff.getFullYear() + "years old and ";}
+      console.log(diff.getFullYear());
+      if(diff.getFullYear() === 1){ret += diff.getFullYear() + " year and ";}
+      else{ret += diff.getFullYear() + " years and ";}
     }
     if (diff.getMonth() > 0) {
-      if(diff.getMonth() > 1){ret += diff.getMonth() + " months old";}
-      else{ret += diff.getMonth() + " month old";}
+      if(diff.getMonth() === 1){ret += diff.getMonth() + " month old";}
+      else{ret += diff.getMonth() + " months old";}
     }
     return ret;
   }
